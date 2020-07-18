@@ -9,19 +9,42 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <h1>Hello, World!</h1>
-    <!--
+    <div class="intro">
+      <h1 id="title">Microverse</h1>
+      <p id="description">Please tell us about your experience</p>
+    </div>
 
-    Hello Camper!
+    <form id="survey-form" action="">
+      <label id="name-label" for="name">Name</label>
+      <input placeholder="John Doe" id="name" type="text">
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+      <label id="email-label" for="email">Email</label>
+      <input placeholder="youremail@email.com" id="email" type="email">
 
-    - The freeCodeCamp Team
+      <label id="number-label" for="number">Age</label>
+      <input placeholder="25" type="number" id="number" min="18" max="150">
 
-    -->
+      <label for="dropdown">How'd you hear about Microverse</label>
+      <select id="dropdown" name="" >
+        <option value="">Reddit</option>
+        <option value="">Facebook</option>
+        <option value="">Quora</option>
+        <option value="">Other</option>
+      </select>
+      
+      
+      <label for="">How easy are the coding challenges?</label>
+     
+      <input type="radio" id="easy" name="difficulty" value="easy">
+      <label for="">Easy</label>
+      
+      <input type="radio" id="medium" name="difficulty" value="medium">
+      <label for="">Medium</label>
+      
+      <input type="radio" id="hard" name="difficulty" value="hard">
+      <label for="">Hard</label>
+      
+    </form>
     <script  src="js/index.js"></script>
   </body>
 </html>
