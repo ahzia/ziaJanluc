@@ -1,7 +1,26 @@
-body{
+body
+{
     background-color: lightblue;
-    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-input{
-    margin:0 auto;
+#header{text-align: center;}
+form
+{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 25%;
+    padding-bottom: 15px;
+    background-color: lightgrey;
 }
+
+div{margin: 15px 15px;}
+label {font-size: 26px;}
+input {font-size: 18px;}
+select{font-size: 18px;}
+textarea{font-size: 18px;}
+
+.challenges{display:block;}
+
+#commentArea label{display:block;}
