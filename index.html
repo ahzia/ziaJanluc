@@ -15,35 +15,58 @@
     </div>
 
     <form id="survey-form" action="">
+      <div class="name">
       <label id="name-label" for="name">Name</label>
-      <input placeholder="John Doe" id="name" type="text">
-
+      <input placeholder="John Doe" id="name" required type="text">
+    </div>
+    <div>
       <label id="email-label" for="email">Email</label>
-      <input placeholder="youremail@email.com" id="email" type="email">
-
+      <input placeholder="youremail@email.com" id="email" required type="email">
+    </div>
+    <div>
       <label id="number-label" for="number">Age</label>
       <input placeholder="25" type="number" id="number" min="18" max="150">
-
+    </div>
+    <div>
       <label for="dropdown">How'd you hear about Microverse</label>
+     
       <select id="dropdown" name="" >
         <option value="">Reddit</option>
         <option value="">Facebook</option>
         <option value="">Quora</option>
         <option value="">Other</option>
       </select>
-      
-      
+    </div>
+      <div>
       <label for="">How easy are the coding challenges?</label>
      
       <input type="radio" id="easy" name="difficulty" value="easy">
-      <label for="">Easy</label>
+      <label for="easy">Easy</label>
       
       <input type="radio" id="medium" name="difficulty" value="medium">
-      <label for="">Medium</label>
+      <label for="medium">Medium</label>
       
       <input type="radio" id="hard" name="difficulty" value="hard">
-      <label for="">Hard</label>
+      <label for="hard">Hard</label>
+    </div>
+    <div>
       
+      <label for="">How many languages are you familiar with?</label>
+     
+      <input type="checkbox" id="java" name="languages" value="java">
+      <label for="java">Java</label>
+      
+      <input type="checkbox" id="python" name="languages" value="python">
+      <label for="python">Python</label>
+      
+      <input type="checkbox" id="js" name="languages" value="javascript">
+      <label for="js">JavaScript</label>
+    </div>
+    <div>
+      <label>Any comment:</label>
+      <textarea ></textarea>
+    </div>
+      <input type="submit" id="submit">
     </form>
     <script  src="js/index.js"></script>
   </body>
